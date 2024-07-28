@@ -164,29 +164,41 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
-
-              <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+              <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-
-                    <img src='images/scenecut.png' width="160">
+                    <div class="two" id='objectcarver'><video  width=100% muted autoplay loop>
+                    <source src="images/scene16.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/objectcarver_teaser.png' width=100%>
                   </div>
-
+                  <script type="text/javascript">
+                    function nuvo_start() {
+                      document.getElementById('objectcarver').style.opacity = "1";
+                    }
+          
+                    function nuvo_stop() {
+                      document.getElementById('objectcarver').style.opacity = "0";
+                    }
+                    nuvo_stop()
+                  </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a>
-                    <papertitle>SceneCut: Semi-automatic segmentation, reconstruction and separation of 3D objects</papertitle>
+                  <a href="https://objectcarver.github.io/">
+                    <papertitle>ObjectCarver: Semi-automatic segmentation, reconstruction and separation of 3D objects</papertitle>
                   </a>
                   <br>
                   <strong>Gemmechu Hassena</strong>,
                   Jonathan Moon,
                   Ryan Fujii,
-                  Andrew Yuen,
+                  Andrew Yuen, <br>
                   Noah Snavely,
                   Steve Marschner,
                   Bharath Hariharan
                   <br>
-                  [coming soon]
+                  [<a href="https://objectcarver.github.io/">project page</a>]
+                  
                   <p>How can we separate objects within a scene without a provided segmentation mask? Given point clicks in a single view, SceneCut will generate a mask, propagate it to other views, reconstruct the 3D surface, and separate the objects in the scene.</p>
                   
                 </td>
@@ -380,10 +392,10 @@
               <tr>
                 
                 <td style="padding-left:20px;width:75%;vertical-align:middle">
-                  <a><papertitle>Summer Geometry Initiative</papertitle></a>
+                  <a><papertitle>Summer Geometry Initiative - MIT</papertitle></a>
                 
                   <br>
-                  <em>Volunteer and Social hour Chair</em>, 2023 and 2024 
+                  <em>Social hour Chair</em>, 2023 and 2024 
                   <p> </p>
                 </td>
               </tr>
@@ -396,7 +408,7 @@
 
                 </td> -->
                 <td style="padding-left:20px;width:75%;vertical-align:middle">
-                  <a><papertitle>SoNiC</papertitle></a>
+                  <a><papertitle>SoNiC - Cornell Univeristy</papertitle></a>
                 
                   <br>
                   <em>TA</em>, 2024
@@ -430,7 +442,7 @@
 
                 </td> -->
                 <td style="padding-left:20px;width:75%;vertical-align:middle">
-                  <a href="https://t.me/inspire_official"><papertitle>INSPIRE</papertitle></a>
+                  <a href="https://t.me/inspire_official"><papertitle>INSPIRE - Addis Ababa University</papertitle></a>
                 
                   <br>
                   <em>President</em>, Nov 2019 — Nov 2020
