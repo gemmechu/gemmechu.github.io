@@ -1,0 +1,234 @@
+/* Global layout */
+body {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    /* Dark/Light theme variables */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  /* === Theme Variables === */
+  :root {
+    --bg-color: #fff;
+    --text-color: #222;
+    --accent-color: #b22222;
+  }
+  
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #ff6347;
+  }
+  
+  body.dark-mode a {
+    color: var(--accent-color);
+  }
+  
+  body.dark-mode .badge-button {
+    background-color: #333;
+    border: 1px solid #666;
+    color: #eee;
+  }
+  
+  body.dark-mode .badge-button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+  
+  /* Navbar */
+  .link-button, .link-button-small {
+    font-family: 'Alegreya SC', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--accent-color);
+    background: none;
+    border: none;
+    margin-left: 15px;
+    padding: 0;
+  }
+  
+  .link-button:hover, .link-button-small:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* About section */
+  .about-headshot {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+  }
+  
+  .title-name {
+    font-family: 'Alegreya SC', serif;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap; /* keep name one line */
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .title-email a {
+    color: var(--accent-color);
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .title-email a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Profile column spacing */
+  .about-left {
+    padding-right: 25px;
+    margin-top: -10px; /* lift photo/name slightly */
+  }
+  
+  /* Social icons */
+  .social-icons .fa {
+    font-size: 28px;
+    margin: 0 10px;
+    color: var(--accent-color);
+  }
+  
+  .social-icons .fa:hover {
+    color: black;
+  }
+  
+  /* Section headers (right aligned) */
+  .content-header p {
+    font-family: 'Alegreya SC', serif;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+    text-align: right;
+  }
+  
+  /* News list */
+  .expandable-list ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .expandable-list li {
+    margin-bottom: 6px;
+  }
+  
+  .news-date {
+    font-weight: bold;
+    font-family: 'Alegreya SC', serif;
+    margin-right: 8px;
+  }
+  
+  .news-expand-button {
+    color: var(--accent-color);
+    cursor: pointer;
+    font-family: 'Alegreya SC', serif;
+  }
+  
+  /* News subtitle */
+  .section-subtitle {
+    font-family: 'Alegreya SC', serif;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+  }
+  
+  /* Research/projects layout */
+  .content-summary {
+    margin-bottom: 20px;
+  }
+  
+  .summary-title {
+    font-family: 'Alegreya SC', serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .summary-authors {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  
+  .summary-publication-status {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--accent-color);
+    margin-bottom: 6px;
+  }
+  
+  .summary-text {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  
+  
+  
+  /* Badge buttons */
+  .badge-button {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    font-family: 'Lora', serif;
+    padding: 3px 8px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .badge-button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  footer p {
+    font-size: 13px;
+    color: #666;
+    margin-top: 40px;
+  }
+  
+  /* Dark/Light toggle button in navbar */
+  #themeToggle, #themeToggleMobile {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    color: var(--accent-color);
+  }
+  
+  /* Remove padding from image column in research/projects */
+.content-summary .col-sm-3 {
+    padding: 0;
+  }
+  
+  /* Research/Project images */
+  .summary-image {
+    border-radius: 1px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.19); /* stronger shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .summary-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25),
+                0 8px 24px rgba(0, 0, 0, 0.22);
+  }
